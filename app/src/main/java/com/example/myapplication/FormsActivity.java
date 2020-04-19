@@ -40,7 +40,7 @@ public class FormsActivity extends AppCompatActivity {
     private void addListeners() {
         btnSave.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (studentToUpdate.getId() == null) {
+                if (studentToUpdate == null) {
                     saveStudent();
                 } else {
                     updateStudent();
